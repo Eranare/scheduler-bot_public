@@ -1,0 +1,33 @@
+[package]
+name = "disc-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+env_logger = "0.9"
+reqwest = "0.11"
+serenity = { version = "0.11.6", default-features = false, features = ["client", "gateway", "http", "rustls_backend", "voice"] }
+poise = "0.5.6"
+tokio = { version = "1.21.2", features = ["macros", "rt-multi-thread"] }
+dotenv = "0.15"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+r2d2 = "0.8"
+chrono = "0.4"
+tokio-postgres = "0.7"
+bb8 = "0.7"
+bb8-postgres = "0.7"
+image = "0.23.14"
+imageproc = "0.22"
+percent-encoding = "2.3.0"
+lazy_static = "1.4.0"
+async-trait = "0.1"
+thiserror = "1.0.40"
+humantime = "2.1.0"
+
+[dev-dependencies]
+mockall = "0.10"
